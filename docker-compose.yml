@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tor-proxy:
+    image: test
+    container_name: tor
+    ports:
+      - 0.0.0.0:9050:9050
+    volumes:
+      - ./Config:/etc/tor
+    restart: always
