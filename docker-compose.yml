@@ -1,8 +1,8 @@
 version: '3'
 services:
   tor-proxy:
-    image: test
-    container_name: tor
+    image: tor-proxy-local
+    container_name: tor-local
     ports:
       - 0.0.0.0:9050:9050
     volumes:
