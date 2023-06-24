@@ -4,7 +4,7 @@ services:
     image: tor-proxy
     container_name: tor-local
     ports:
-      - 0.0.0.0:9050:9050
+      - 0.0.0.0:2020:2020
     volumes:
       - ./Config:/etc/tor
     restart: always
